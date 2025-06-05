@@ -1,0 +1,11 @@
+# ROS 2 build files
+build/
+install/
+log/
+*.pyc
+__pycache__/
+*.swp
+*.bak
+*.egg-info/
+
+
