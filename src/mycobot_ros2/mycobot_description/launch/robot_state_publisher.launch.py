@@ -44,12 +44,12 @@ def process_ros2_controllers_config(context):
     # Define both source and install paths
     src_config_path = os.path.join(
         home,
-        'ros2_ws/src/mycobot_ros2/mycobot_moveit_config/config',
+        'ros2_ws_personal/src/mycobot_ros2/mycobot_moveit_config/config',
         robot_name
     )
     install_config_path = os.path.join(
         home,
-        'ros2_ws/install/mycobot_moveit_config/share/mycobot_moveit_config/config',
+        'ros2_ws_personal/install/mycobot_moveit_config/share/mycobot_moveit_config/config',
         robot_name
     )
 
@@ -219,7 +219,7 @@ def generate_launch_description():
     ld = LaunchDescription(ARGUMENTS)
 
     # Process the controller configuration before starting nodes
-    #ld.add_action(OpaqueFunction(function=process_ros2_controllers_config))
+    ld.add_action(OpaqueFunction(function=process_ros2_controllers_config))
 
     # Declare the launch options
     ld.add_action(declare_jsp_gui_cmd)
