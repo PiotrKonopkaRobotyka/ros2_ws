@@ -20,6 +20,12 @@ find_package(ros2_controllers REQUIRED)
 find_package(trajectory_msgs REQUIRED)
 find_package(xacro REQUIRED)
 
+#Copy files from to the designation location in the project
+install(
+  DIRECTORY config launch models rviz worlds
+  DESTINATION share/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
