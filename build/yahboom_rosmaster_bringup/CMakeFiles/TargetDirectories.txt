@@ -1,9 +1,0 @@
-/home/piotr/ros2_ws/build/yahboom_rosmaster_bringup/CMakeFiles/uninstall.dir
-/home/piotr/ros2_ws/build/yahboom_rosmaster_bringup/CMakeFiles/yahboom_rosmaster_bringup_uninstall.dir
-/home/piotr/ros2_ws/build/yahboom_rosmaster_bringup/CMakeFiles/test.dir
-/home/piotr/ros2_ws/build/yahboom_rosmaster_bringup/CMakeFiles/edit_cache.dir
-/home/piotr/ros2_ws/build/yahboom_rosmaster_bringup/CMakeFiles/rebuild_cache.dir
-/home/piotr/ros2_ws/build/yahboom_rosmaster_bringup/CMakeFiles/list_install_components.dir
-/home/piotr/ros2_ws/build/yahboom_rosmaster_bringup/CMakeFiles/install.dir
-/home/piotr/ros2_ws/build/yahboom_rosmaster_bringup/CMakeFiles/install/local.dir
-/home/piotr/ros2_ws/build/yahboom_rosmaster_bringup/CMakeFiles/install/strip.dir
