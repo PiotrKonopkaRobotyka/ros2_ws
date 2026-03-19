@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000203] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict({'mecanum_drive_controller': '/home/piotr/ros2_ws/install/mecanum_drive_controller'})}
+[0.000252] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.021609] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 0}
+[0.022221] (-) EventReactorShutdown: {}

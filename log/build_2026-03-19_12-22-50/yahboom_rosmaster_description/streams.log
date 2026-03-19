@@ -1,0 +1,76 @@
+[0.016s] Invoking command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/piotr/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_description -DCMAKE_INSTALL_PREFIX=/home/piotr/ros2_ws/install/yahboom_rosmaster_description
+[0.060s] -- The C compiler identification is GNU 13.3.0
+[0.115s] -- The CXX compiler identification is GNU 13.3.0
+[0.127s] -- Detecting C compiler ABI info
+[0.196s] -- Detecting C compiler ABI info - done
+[0.202s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.202s] -- Detecting C compile features
+[0.203s] -- Detecting C compile features - done
+[0.211s] -- Detecting CXX compiler ABI info
+[0.291s] -- Detecting CXX compiler ABI info - done
+[0.298s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.298s] -- Detecting CXX compile features
+[0.298s] -- Detecting CXX compile features - done
+[0.302s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.444s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.566s] -- Found urdf_tutorial: 1.1.0 (/opt/ros/jazzy/share/urdf_tutorial/cmake)
+[0.569s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.678s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.678s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.679s] -- Added test 'lint_cmake' to check CMake code style
+[0.680s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.683s] -- Added test 'xmllint' to check XML markup files
+[0.686s] -- Configuring done (0.7s)
+[0.689s] -- Generating done (0.0s)
+[0.690s] -- Build files have been written to: /home/piotr/ros2_ws/build/yahboom_rosmaster_description
+[0.699s] Invoked command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/piotr/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_description -DCMAKE_INSTALL_PREFIX=/home/piotr/ros2_ws/install/yahboom_rosmaster_description
+[0.700s] Invoking command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/piotr/ros2_ws/build/yahboom_rosmaster_description -- -j16 -l16
+[0.748s] Invoked command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/piotr/ros2_ws/build/yahboom_rosmaster_description -- -j16 -l16
+[0.750s] Invoking command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/piotr/ros2_ws/build/yahboom_rosmaster_description
+[0.759s] -- Install configuration: ""
+[0.759s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/launch
+[0.759s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/launch/robot_state_publisher.launch.py
+[0.759s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes
+[0.759s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/rplidar
+[0.759s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/rplidar/rplidar_s2.stl
+[0.759s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/rosmaster_x3
+[0.760s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/rosmaster_x3/visual
+[0.760s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/rosmaster_x3/visual/front_right_wheel_X3.STL
+[0.762s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/rosmaster_x3/visual/back_right_wheel_X3.STL
+[0.762s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/rosmaster_x3/visual/laser_link.STL
+[0.767s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/rosmaster_x3/visual/camera_link.STL
+[0.768s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/rosmaster_x3/visual/back_left_wheel_X3.STL
+[0.769s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/rosmaster_x3/visual/base_link_X3.STL
+[0.772s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/rosmaster_x3/visual/front_left_wheel_X3.STL
+[0.773s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/intel_realsense
+[0.773s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/intel_realsense/visual
+[0.773s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/meshes/intel_realsense/visual/d435.stl
+[0.780s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/urdf
+[0.780s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/urdf/control
+[0.780s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/urdf/mech
+[0.780s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/urdf/mech/mecanum_wheel.urdf.xacro
+[0.780s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/urdf/mech/rosmaster_x3_base.urdf.xacro
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/urdf/sensors
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/urdf/sensors/imu.urdf.xacro
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/urdf/sensors/rgbd_camera.urdf.xacro
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/urdf/sensors/lidar.urdf.xacro
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/urdf/robots
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/urdf/robots/rosmaster_x3.urdf.xacro
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/rviz
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/rviz/yahboom_rosmaster_description.rviz
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/ament_index/resource_index/package_run_dependencies/yahboom_rosmaster_description
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/ament_index/resource_index/parent_prefix_path/yahboom_rosmaster_description
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/environment/ament_prefix_path.sh
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/environment/ament_prefix_path.dsv
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/environment/path.sh
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/environment/path.dsv
+[0.781s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/local_setup.bash
+[0.782s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/local_setup.sh
+[0.782s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/local_setup.zsh
+[0.782s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/local_setup.dsv
+[0.782s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.dsv
+[0.782s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/ament_index/resource_index/packages/yahboom_rosmaster_description
+[0.782s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/cmake/yahboom_rosmaster_descriptionConfig.cmake
+[0.782s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/cmake/yahboom_rosmaster_descriptionConfig-version.cmake
+[0.782s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.xml
+[0.784s] Invoked command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/piotr/ros2_ws/build/yahboom_rosmaster_description

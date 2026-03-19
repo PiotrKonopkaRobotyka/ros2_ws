@@ -1,0 +1,20 @@
+[0.021s] Invoking command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/piotr/ros2_ws/build/yahboom_rosmaster_gazebo -- -j16 -l16
+[0.063s] Invoked command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/piotr/ros2_ws/build/yahboom_rosmaster_gazebo -- -j16 -l16
+[0.069s] Invoking command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/piotr/ros2_ws/build/yahboom_rosmaster_gazebo
+[0.087s] -- Install configuration: ""
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/ament_index/resource_index/package_run_dependencies/yahboom_rosmaster_gazebo
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/ament_index/resource_index/parent_prefix_path/yahboom_rosmaster_gazebo
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/environment/ament_prefix_path.sh
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/environment/ament_prefix_path.dsv
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/environment/path.sh
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/environment/path.dsv
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/local_setup.bash
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/local_setup.sh
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/local_setup.zsh
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/local_setup.dsv
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.dsv
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/ament_index/resource_index/packages/yahboom_rosmaster_gazebo
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/cmake/yahboom_rosmaster_gazeboConfig.cmake
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/cmake/yahboom_rosmaster_gazeboConfig-version.cmake
+[0.087s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.xml
+[0.145s] Invoked command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/piotr/ros2_ws/build/yahboom_rosmaster_gazebo

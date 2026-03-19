@@ -1,0 +1,20 @@
+[0.039s] Invoking command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_system_tests': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/piotr/ros2_ws/build/yahboom_rosmaster_system_tests -- -j16 -l16
+[0.158s] Invoked command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_system_tests' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/piotr/ros2_ws/build/yahboom_rosmaster_system_tests -- -j16 -l16
+[0.159s] Invoking command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_system_tests': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/piotr/ros2_ws/build/yahboom_rosmaster_system_tests
+[0.159s] -- Install configuration: ""
+[0.159s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/ament_index/resource_index/package_run_dependencies/yahboom_rosmaster_system_tests
+[0.159s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/ament_index/resource_index/parent_prefix_path/yahboom_rosmaster_system_tests
+[0.159s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/environment/ament_prefix_path.sh
+[0.159s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/environment/ament_prefix_path.dsv
+[0.159s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/environment/path.sh
+[0.160s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/environment/path.dsv
+[0.160s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/local_setup.bash
+[0.160s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/local_setup.sh
+[0.160s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/local_setup.zsh
+[0.160s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/local_setup.dsv
+[0.160s] -- Installing: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.dsv
+[0.160s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/ament_index/resource_index/packages/yahboom_rosmaster_system_tests
+[0.160s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/cmake/yahboom_rosmaster_system_testsConfig.cmake
+[0.160s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/cmake/yahboom_rosmaster_system_testsConfig-version.cmake
+[0.161s] -- Up-to-date: /home/piotr/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.xml
+[0.215s] Invoked command in '/home/piotr/ros2_ws/build/yahboom_rosmaster_system_tests' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/piotr/ros2_ws/build/yahboom_rosmaster_system_tests
