@@ -11,12 +11,12 @@
   <xacro:macro name="mecanum_wheel" params="prefix side x_reflect y_reflect">
     <link name="${prefix}${side}_wheel_link">
       <visual>
-        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>  <!-- Rotated 90 degrees around X axis -->
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
         <geometry>
           <mesh filename="file://$(find yahboom_rosmaster_description)/meshes/rosmaster_x3/visual/${side}_wheel_X3.STL"/>
         </geometry>
-        <material name="dark_gray"> 
-          <color rgba="0.2 0.2 0.2 1.0"/> <!-- Dark gray color -->
+        <material name="dark_gray">
+          <color rgba="0.2 0.2 0.2 1.0"/>
         </material>
       </visual>
 
@@ -38,10 +38,9 @@
     </link>
 
     <joint name="${prefix}${side}_wheel_joint" type="continuous">
-      <axis xyz="0 1 0"/> <!-- Spins around Y axis -->
+      <axis xyz="0 1 0"/>
       <parent link="${prefix}base_link"/>
       <child link="${prefix}${side}_wheel_link"/>
-      <!-- Position is calculated based on x_reflect and y_reflect to place wheel correctly -->
       <origin xyz="${x_reflect*wheel_xoff} ${y_reflect*(wheel_separation/2+wheel_yoff)} ${-wheel_radius}" rpy="0 0 0"/>
     </joint>
 

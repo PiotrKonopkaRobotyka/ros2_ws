@@ -14,11 +14,31 @@ find_package(std_msgs REQUIRED)
 find_package(rcl_interfaces REQUIRED)
 #find_package(yahboom_rosmaster_msgs REQUIRED)
 
+
 # Copy necessary files to designated locations in the project
 #install (
 #  DIRECTORY config launch
 #  DESTINATION share/${PROJECT_NAME}
 #)
+
+# Add the square mecanum controller executable
+add_executable(square_mecanum_controller
+  src/square_mecanum_controller.cpp
+)
+
+# Specify dependencies for the target
+ament_target_dependencies(square_mecanum_controller
+  rclcpp
+  geometry_msgs
+  std_msgs
+)
+
+# Install the executables
+install(TARGETS
+  square_mecanum_controller
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
