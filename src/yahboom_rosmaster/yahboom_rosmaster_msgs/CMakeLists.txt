@@ -7,11 +7,12 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "action/TimedRotation.action")
+  "action/TimedRotation.action"
+  "srv/SetCleaningState.srv"
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

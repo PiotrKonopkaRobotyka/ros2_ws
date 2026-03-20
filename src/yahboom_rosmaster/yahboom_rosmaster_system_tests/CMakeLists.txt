@@ -14,7 +14,6 @@ find_package(std_msgs REQUIRED)
 find_package(rcl_interfaces REQUIRED)
 find_package(yahboom_rosmaster_msgs REQUIRED)
 
-
 # Copy necessary files to designated locations in the project
 install (
   DIRECTORY config launch
@@ -39,6 +38,11 @@ add_executable(timed_rotation_action_server
 # Add the timed rotation action client executable
 add_executable(timed_rotation_action_client
   src/timed_rotation_action_client.cpp
+)
+
+# Add a service server
+add_executable(set_cleaning_state_service
+  src/set_cleaning_state_service.cpp
 )
 
 # Specify dependencies for the target
@@ -72,12 +76,20 @@ ament_target_dependencies(timed_rotation_action_client
   std_msgs
 )
 
+# Specify dependencies for the service server
+ament_target_dependencies(set_cleaning_state_service
+  rclcpp
+  yahboom_rosmaster_msgs
+)
+
+
 # Install the executables
 install(TARGETS
   square_mecanum_controller
   mecanum_parameters_node
   timed_rotation_action_server
   timed_rotation_action_client
+  set_cleaning_state_service
   DESTINATION lib/${PROJECT_NAME}
 )
 
