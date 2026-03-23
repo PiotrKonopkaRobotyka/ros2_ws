@@ -4,12 +4,9 @@
   <name>mecanum_drive_controller</name>
   <version>0.0.0</version>
   <description>Controller for a mecanum-drive mobile base allowing omnidirectional movement.</description>
-  <maintainer email="automaticaddison@todo.com">Addison Sears-Collins</maintainer>
+  <maintainer email="piotr.konopka.robotyka@gmail.com">piotr</maintainer>
 
   <license>BSD-3-Clause</license>
-
-  <url type="website">https://automaticaddison.com</url>
-  <url type="repository">https://github.com/automaticaddison</url>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <build_depend>generate_parameter_library</build_depend>
