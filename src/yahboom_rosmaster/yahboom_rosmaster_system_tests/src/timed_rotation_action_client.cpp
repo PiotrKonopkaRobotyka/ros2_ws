@@ -93,7 +93,7 @@ private:
     else if (timed_rotation_mode_ && !msg->data)
     {
       // Transition from True to False - Cancel if active
-      if (goal_handle_ && goal_handle_->get_status() == rclcpp_action::GoalStatus::STATUS_ACCEPTED)
+      if (goal_handle_ && (goal_handle_->get_status() == rclcpp_action::GoalStatus::STATUS_EXECUTING || goal_handle_->get_status() == rclcpp_action::GoalStatus::STATUS_ACCEPTED))
       {
         cancel_goal();
       }
@@ -170,16 +170,22 @@ private:
         RCLCPP_ERROR(get_logger(), "Goal handle is null");
         return;
     }
- 
-    auto future = action_client_->async_cancel_goal(goal_handle_);
- 
-    if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), future) !=
-        rclcpp::FutureReturnCode::SUCCESS)
-    {
-        RCLCPP_ERROR(get_logger(), "Failed to cancel goal");
-        return;
-    }
-    RCLCPP_INFO(get_logger(), "Goal cancellation request sent");
+    
+    action_client_->async_cancel_goal(
+      goal_handle_,
+      [this](action_msgs::srv::CancelGoal::Response::SharedPtr response)
+      {
+        if (response->return_code == action_msgs::srv::CancelGoal::Response::ERROR_NONE)
+        {
+          RCLCPP_INFO(get_logger(), "Goal cancellation accepted by server");
+          goal_handle_ = nullptr;
+        }
+        else 
+        {
+          RCLCPP_ERROR(get_logger(), "Sever rejected cancellation request");
+        }
+      }
+    );
   }
  
   /**
