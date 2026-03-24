@@ -378,11 +378,11 @@ def generate_launch_description():
 
     # Add any actions
     #ld.add_action(start_apriltag_dock_cmd)
-    #ld.add_action(start_assisted_teleop_cmd)
+    ld.add_action(start_assisted_teleop_cmd)
     ld.add_action(start_cmd_vel_relay_cmd)
     ld.add_action(start_ekf_cmd)
     ld.add_action(start_gazebo_cmd)
-    #ld.add_action(start_nav_to_pose_cmd)
+    ld.add_action(start_nav_to_pose_cmd)
     ld.add_action(start_ros2_navigation_cmd)
 
     return ld
