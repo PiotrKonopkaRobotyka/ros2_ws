@@ -446,7 +446,7 @@ docking_server:
       filter_coef: 0.1
 
     # Dock instances
-    #dock_database: $(find-pkg-share yahboom_rosmaster_docking)/config/dock_database.yaml
+    dock_database: $(find-pkg-share yahboom_rosmaster_docking)/config/dock_database.yaml
 
     controller:
       k_phi: 3.0
