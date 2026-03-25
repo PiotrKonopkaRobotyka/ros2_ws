@@ -16,7 +16,7 @@ Parameters:
 :author: Addison Sears-Collins
 :date: December 5, 2024
 """
-import threading
+
 import rclpy
 from rclpy.node import Node
 from rclpy.exceptions import ROSInterruptException
@@ -41,12 +41,10 @@ class AssistedTeleopNode(Node):
             2.0,
             ParameterDescriptor(description='Frequency in Hz for costmap clearing')
         )
-        param_value = self.get_parameter('costmap_clear_frequency').value
-        clear_frequency: float = float(param_value) if param_value is not None else 2.0
+        clear_frequency = self.get_parameter('costmap_clear_frequency').value
 
         # Initialize the BasicNavigator for interfacing with Nav2
         self.navigator = BasicNavigator('assisted_teleop_navigator')
-        self.navigator.lifecycleShutdown = lambda: None  # ✅ FIX 1: blokuje kill Nav2
 
         # Create subscribers for velocity commands and cancellation requests
         self.cmd_vel_sub = self.create_subscription(
@@ -63,18 +61,15 @@ class AssistedTeleopNode(Node):
         self.clear_costmaps_timer = self.create_timer(period, self.clear_costmaps_callback)
 
         self.get_logger().info(
-            f'Assisted Teleop Node initialized with costmap clearing frequency: '
-            f'{clear_frequency} Hz'
-        )
+            f'Assisted Teleop Node initialized with costmap clearing frequency: {
+                clear_frequency} Hz')
 
-        # ✅ FIX 2: waitUntilNav2Active() jest blokujące — odpal w osobnym wątku
-        threading.Thread(
-            target=self.navigator.waitUntilNav2Active,
-            daemon=True
-        ).start()
+        # Wait for navigation to fully activate.
+        self.navigator.waitUntilNav2Active()
 
     def cmd_vel_callback(self, twist_msg: Twist) -> None:
         """Process incoming velocity commands and activate assisted teleop if needed."""
+        # Reset cancellation flag when new velocity commands are received
         if (abs(twist_msg.linear.x) > 0.0 or
             abs(twist_msg.linear.y) > 0.0 or
                 abs(twist_msg.angular.z) > 0.0):
@@ -90,12 +85,7 @@ class AssistedTeleopNode(Node):
         """Start the Assisted Teleop action with indefinite duration."""
         self.assisted_teleop_active = True
         self.cancellation_requested = False
-        # ✅ FIX 3: assistedTeleop() jest blokujące — musi działać w osobnym wątku
-        threading.Thread(
-            target=self.navigator.assistedTeleop,
-            kwargs={'time_allowance': 0},
-            daemon=True
-        ).start()
+        self.navigator.assistedTeleop(time_allowance=0)  # 0 means indefinite duration
         self.get_logger().info('AssistedTeleop activated with indefinite duration')
 
     def cancel_callback(self, msg: Bool) -> None:
@@ -115,6 +105,7 @@ class AssistedTeleopNode(Node):
         """Periodically clear all costmaps to remove temporary obstacles."""
         if not self.assisted_teleop_active:
             return
+
         self.navigator.clearAllCostmaps()
         self.get_logger().debug('Costmaps cleared')
 
@@ -137,7 +128,7 @@ def main():
     finally:
         if node:
             node.cancel_assisted_teleop()
-            # ✅ FIX 4: NIE wywołuj lifecycleShutdown() — Nav2 zarządza sam
+            node.navigator.lifecycleShutdown()
         rclpy.shutdown()
 
 
