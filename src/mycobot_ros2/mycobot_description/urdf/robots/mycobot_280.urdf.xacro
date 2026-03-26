@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mycobot_280">
-    <xacro:arg name="add_world" default="true"/>      <!-- Whether to add a world link -->
-    <xacro:arg name="base_link" default="base_link"/> <!-- Name of the base link -->
-    <xacro:arg name="base_type" default="g_shape"/>   <!-- Type of base to use -->
-    <xacro:arg name="flange_link" default="link6_flange"/> <!-- Name of end flange -->
-    <xacro:arg name="gripper_type" default="adaptive_gripper"/> <!-- Type of gripper -->
-    <xacro:arg name="prefix" default=""/>        <!-- Prefix for naming -->
-    <xacro:arg name="use_gripper" default="true"/>    <!-- Whether to add a gripper -->
+    <xacro:arg name="robot_name" default="mycobot_280"/>
+    <xacro:arg name="add_world" default="true"/>
+    <xacro:arg name="base_link" default="base_link"/>
+    <xacro:arg name="base_type" default="g_shape"/>
+    <xacro:arg name="flange_link" default="link6_flange"/>
+    <xacro:arg name="gripper_type" default="adaptive_gripper"/>
+    <xacro:arg name="prefix" default=""/>
     <xacro:arg name="use_camera" default="false"/>
     <xacro:arg name="use_gazebo" default="false"/>
+    <xacro:arg name="use_gripper" default="true"/>
 
     <xacro:if value="$(arg add_world)">
       <link name="world"/>
@@ -58,6 +59,6 @@
       flange_link="$(arg flange_link)"
       use_gazebo="$(arg use_gazebo)"/>
 
-    <!--xacro:include filename="$(find mycobot_description)/urdf/sensors/intel_rgbd_cam_d435.urdf.xacro"/-->
+    <xacro:include filename="$(find mycobot_description)/urdf/sensors/intel_rgbd_cam_d435.urdf.xacro"/>
 
 </robot>
