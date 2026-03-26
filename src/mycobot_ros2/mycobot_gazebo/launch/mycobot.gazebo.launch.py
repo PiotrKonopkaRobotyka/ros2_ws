@@ -173,7 +173,8 @@ def generate_launch_description():
             'use_camera': use_camera,
             'use_gazebo': use_gazebo,
             'use_rviz': use_rviz,
-            'use_sim_time': use_sim_time
+            'use_sim_time': use_sim_time,
+            'robot_name': robot_name
         }.items(),
         condition=IfCondition(use_robot_state_pub)
     )
