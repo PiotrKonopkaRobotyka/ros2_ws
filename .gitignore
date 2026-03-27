@@ -10,4 +10,7 @@ src/.vscode/
 *.ipch
 .vscode/
 
+src/moveit_task_constructor/
+src/warehouse_ros_mongo/
+
 compile_commands.json
