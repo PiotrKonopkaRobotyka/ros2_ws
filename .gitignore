@@ -12,5 +12,6 @@ src/.vscode/
 
 src/moveit_task_constructor/
 src/warehouse_ros_mongo/
+src/moveit2/
 
 compile_commands.json
